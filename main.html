@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Team Baseball Savant</title>
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Baseball Savant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
 
+    header {
+      background: #0b1a45;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-header {
-background: #0b1a45;
-color: white;
-padding: 20px;
-text-align: center;
-}
+    nav {
+      background: #142b6f;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-nav {
-background: #142b6f;
-padding: 10px;
-display: flex;
-justify-content: center;
-gap: 20px;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
 
-nav a {
-color: white;
-text-decoration: none;
-font-weight: bold;
-}
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
 
-nav a:hover {
-text-decoration: underline;
-}
+    .player-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
 
-.container {
-max-width: 1100px;
-margin: auto;
-padding: 20px;
-}
+  <header>
+    <h1>Team Baseball Savant</h1>
+  </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Players</a>
+    <a href="#">Stats</a>
+    <a href="#">Contact</a>
+  </nav>
 
-.card {
-background: white;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  <div class="container">
+    <div class="card">
+      <h2>Welcome to Team Baseball Savant</h2>
+      <p>Explore player statistics, game highlights, and more!</p>
+    </div>
 
+    <div class="player-grid">
+      <div class="player-card">
+        <h3>Player 1</h3>
+        <p>Position: Pitcher</p>
+      </div>
+      <div class="player-card">
+        <h3>Player 2</h3>
+        <p>Position: Catcher</p>
+      </div>
+      <div class="player-card">
+        <h3>Player 3</h3>
+        <p>Position: Outfielder</p>
+      </div>
+    </div>
+  </div>
 
-.player-grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap: 20px;
-}
+  <footer>
+    <p>&copy; 2025 Team Baseball Savant. All rights reserved.</p>
+  </footer>
 
-
-.player-card {
-background: white;
-padding: 15px;
-border-radius: 10px;
-text-align: center;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-footer {
-text-align: center;
-padding: 20px;
-margin-top: 40px;
-color: #444;
-}
+</body>
 </html>
